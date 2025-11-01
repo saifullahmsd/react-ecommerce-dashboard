@@ -1,12 +1,74 @@
-# React + Vite
+React E-commerce Shop Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive e-commerce shopping page built with React, Redux Toolkit, and Tailwind CSS. This project simulates a product list and a live-updating shopping cart, demonstrating modern frontend state management practices.
 
-Currently, two official plugins are available:
+📸 Preview
+![E-commerce Dashboard Preview](shoping-dashboard.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Features
 
-## Expanding the ESLint configuration
+Product Listing: Fetches and displays a list of products from a mock async API.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+State Management: Uses Redux Toolkit for robust global state management (cart and products).
+
+Async Operations: Uses createAsyncThunk to handle asynchronous product fetching with loading/error states.
+
+Shopping Cart:
+
+Add products to the cart.
+
+Increase or decrease item quantity.
+
+Remove items from the cart.
+
+Clear the entire cart.
+
+Live Summary: Cart totals (item count and price) update instantly across the Navbar, Cart, and Footer Summary bar.
+
+Optimized Selectors: Uses useSelector with custom selector functions (cartSelector.js) to efficiently derive state.
+
+Styling: Fully responsive layout styled with Tailwind CSS.
+
+🛠️ Technologies Used
+
+React 18
+
+Vite (Build Tool)
+
+Redux Toolkit (State Management)
+
+React-Redux
+
+Tailwind CSS (Styling)
+
+🚀 Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+Prerequisites
+
+Node.js (v18 or later recommended)
+
+npm or yarn
+
+Installation & Setup
+
+Clone the repository:
+`sh
+    git clone [https://github.com/saifullahmsd/react-ecommerce-dashboard.git](https://github.com/saifullahmsd/react-ecommerce-dashboard.git)
+    cd react-ecommerce-dashboard
+    `
+
+Install dependencies:
+
+npm install
+
+(or yarn install)
+
+Run the development server:
+
+npm run dev
+
+(or yarn dev)
+
+Open http://localhost:5173 (or the port shown in your terminal) to view it in the browser.
